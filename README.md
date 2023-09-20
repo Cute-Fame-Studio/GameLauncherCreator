@@ -7,5 +7,7 @@ Be sure to install npm and git bash to it's location to modify it.
 
 ## Project made in electron. If you contribute you should make sure you know this language. 
 
-Tags below to help google. So ignore them.
-"Patchkit" "Xsolla" "Simple Game Launcher" "Game Launcher Creator" "Electron Game Launcher" "Html Game Launcher"
+
+
+Tags and keywords below to help google. So ignore them.
+###### "Patchkit" "Xsolla" "Simple Game Launcher" "Game Launcher Creator" "Electron Game Launcher" "Html Game Launcher"
