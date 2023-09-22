@@ -1,9 +1,9 @@
 {
-  "name": "GL Creator",
+  "name": "gl_creator",
   "productName": "GLC Project Files",
   "version": "1.0.0",
   "description": "GLC client modifiable project files.",
-  "main": "src/index.js",
+  "main": "win/index.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
