@@ -12,7 +12,7 @@ const createWindow = () => {
     width: 1000,
     height: 600,
     title: "Launcher",
-    icon: './src/GLCLOGO.png',
+    icon: './src/assets/icon/icon.png',
     webPreferences: {
       nodeIntegration: false, /* Don't change it if you dont whant allow hackers make hacker things */
       preload: './win/preload.js'
@@ -26,7 +26,7 @@ const createWindow = () => {
   mainWindow.setMenuBarVisibility(false);
 
   // Shows the dev tools
-  mainWindow.webContents.openDevTools();
+  //mainWindow.webContents.openDevTools();
 };
 
 // This method will be called when Electron has finished

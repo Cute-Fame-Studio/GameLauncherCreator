@@ -9,6 +9,30 @@ screen {
 
     height: 100vh;
     width: 100vw;
-    background: rgb(255,0,0);
-    background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(255,156,0,1) 9%, rgba(247,255,0,1) 19%, rgba(132,248,0,1) 30%, rgba(0,229,55,1) 41%, rgba(22,210,168,1) 53%, rgba(51,111,184,1) 66%, rgba(119,76,161,1) 78%, rgba(142,67,109,1) 88%, rgba(255,0,0,1) 100%);
+    background: white;
+}
+
+#background {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+
+#background .layer {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+}
+
+#background #shader {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(117deg, rgba(252, 255, 113, 0.14) 0%, #000 100%);
+    mix-blend-mode: hard-light;
+    backdrop-filter: blur(1px);
 }
