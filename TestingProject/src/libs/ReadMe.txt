@@ -1,1 +1,0 @@
-This folder is for intergrations. And javascript api's

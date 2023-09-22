@@ -1,4 +1,4 @@
 # This will list things such as api code or api examples for intergrations to the launcher.
 
-One integration that shoukd be handled is is a login and sign in system. as well as a database.
+One integration that should be handled is a log-in and sign-in system. as well as a database.
 (If your pull request adds that. document it here on how to setup their own key.)
