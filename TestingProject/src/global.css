@@ -10,7 +10,7 @@ screen {
     height: 100vh;
     width: 100vw;
     background: white;
-    z-index: -2;
+    z-index: -3;
 }
 
 background {
@@ -26,7 +26,7 @@ background .layer {
     background-position: center;
     position: absolute;
     top: 0;
-    z-index: -1;
+    z-index: -2;
 }
 
 background .shader {
@@ -37,5 +37,13 @@ background .shader {
     background: linear-gradient(117deg, rgba(252, 255, 113, 0.14) 0%, #000 100%);
     mix-blend-mode: hard-light;
     backdrop-filter: blur(1px);
+    z-index: -1;
+}
+
+main {
     z-index: 0;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
 }
