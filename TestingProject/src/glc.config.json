@@ -1,0 +1,15 @@
+{
+    "games": {
+    
+    
+        "game_name_1" : {
+
+            "backgrounds" :
+            [
+                "./assets/backgrounds/bg1.png",
+                "./assets/backgrounds/bg2.png"
+            ]
+        }
+
+    }
+}

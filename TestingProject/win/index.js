@@ -11,7 +11,7 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     width: 1000,
     height: 600,
-    title: "Launcher",
+    title: "GLC",
     icon: './src/assets/icon/icon.png',
     webPreferences: {
       nodeIntegration: false, /* Don't change it if you dont whant allow hackers make hacker things */
