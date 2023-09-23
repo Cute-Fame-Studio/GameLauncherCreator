@@ -40,10 +40,36 @@ background .shader {
     z-index: -1;
 }
 
-main {
+main-screen {
     z-index: 0;
     position: absolute;
     top: 0;
     height: 100vh;
     width: 100vw;
+}
+
+main-screen #LeftBar {
+    position: absolute;
+    width: 75px;
+    height: calc(100% - 75px - 75px);
+    background: #283922;
+    border-right: 3px solid #071D00;
+    border-top: 3px solid #071D00;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+main-screen #BottomBar {
+    position: absolute;
+    height: 75px;
+    width: 100%;
+    border-top: 3px solid #071D00;
+    background: #283922;
+    bottom: 0;
+}
+
+main-screen #icon {
+    width: 60px;
+    height: 60px;
+    margin: calc(15px/2);
 }

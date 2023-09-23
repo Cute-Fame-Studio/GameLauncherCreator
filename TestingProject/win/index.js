@@ -26,7 +26,7 @@ const createWindow = () => {
   mainWindow.setMenuBarVisibility(false);
 
   // Shows the dev tools
-  //mainWindow.webContents.openDevTools();
+  mainWindow.webContents.openDevTools();
 };
 
 // This method will be called when Electron has finished

@@ -19,7 +19,7 @@ export class Component {
             return;
         }
 
-        let url = "/src/app/" + this.template;
+        let url = "./app/" + this.template;
 
         let template = await fetch(url).then( (res) => res.text() );
         return template;

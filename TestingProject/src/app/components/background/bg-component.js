@@ -29,12 +29,12 @@ export class BackgroundComponent extends Component {
         this.backgrounds = this.config.games[this.game].backgrounds;
 
         /* Create two img elements to the transition effect */
-        let imgA = document.createElement("img");
-        let imgB = document.createElement("img");
+        let imgA = document.createElement("div");
+        let imgB = document.createElement("div");
         let shader = document.createElement("div");
         /*configure the img elements */
-        imgA.src = this.backgrounds[0];
-        imgB.src = this.backgrounds[1];
+        imgA.style.backgroundImage = "url(" + this.backgrounds[0] + ")";
+        imgA.style.backgroundImage = "url(" + this.backgrounds[1] + ")";
         imgA.classList.add("layer");
         imgB.classList.add("layer");
         imgA.style.opacity = 1;
@@ -55,12 +55,12 @@ export class BackgroundComponent extends Component {
         if (this.backgroundTime >= 5) {
             
             if (!this.backgroundUpdated) {
-                this.layers[0].src = this.backgrounds[this.backgroundIndex];
+                this.layers[0].style.backgroundImage = "url(" + this.backgrounds[this.backgroundIndex] + ")";
 
                 this.backgroundIndex++;
                 if (this.backgroundIndex >= this.backgrounds.length) this.backgroundIndex = 0;
 
-                this.layers[1].src = this.backgrounds[this.backgroundIndex];
+                this.layers[1].style.backgroundImage = "url(" + this.backgrounds[this.backgroundIndex] + ")";
 
                 this.backgroundUpdated = true;
             }
@@ -73,7 +73,7 @@ export class BackgroundComponent extends Component {
 
             } else {
                 this.layers[1].style.opacity = 0;
-                this.layers[0].src = this.backgrounds[this.backgroundIndex];
+                this.layers[0].style.backgroundImage = "url(" + this.backgrounds[this.backgroundIndex] + ")";
                 this.backgroundUpdated = false;
                 this.backgroundTime = 0;
             }
