@@ -1,6 +1,6 @@
 {
   "name": "gl_creator",
-  "productName": "GLC Project Files",
+  "productName": "GLC PF",
   "version": "1.0.1",
   "description": "GLC client modifiable project files.",
   "main": "win/index.js",
