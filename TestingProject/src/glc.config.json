@@ -6,10 +6,15 @@
 
             "backgrounds" :
             [
-                "./assets/backgrounds/bg1.png",
-                "./assets/backgrounds/bg2.png"
+                "./assets/backgrounds/blue.gif",
+                "./assets/backgrounds/blue.gif"
             ]
         }
 
-    }
+    },
+
+    "styles":
+    [
+        "./assets/styles/style.json"
+    ]
 }

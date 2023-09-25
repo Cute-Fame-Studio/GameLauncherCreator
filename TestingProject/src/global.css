@@ -48,7 +48,7 @@ main-screen {
     width: 100vw;
 }
 
-main-screen #LeftBar {
+main-screen #Left-bar {
     position: absolute;
     width: 75px;
     height: calc(100% - 75px - 75px);
@@ -59,7 +59,7 @@ main-screen #LeftBar {
     box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
-main-screen #BottomBar {
+main-screen #Bottom-bar {
     position: absolute;
     height: 75px;
     width: 100%;
