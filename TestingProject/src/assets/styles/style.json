@@ -1,0 +1,19 @@
+{
+    "@background" : {},
+    "@main-screen" :
+    {
+        "#Left-bar" :
+        {
+            "background" : "white",
+            "border" : "none",
+            "border-radius" : "0 20px 0 0"
+        },
+
+        "#Bottom-bar" :
+        {
+            "background" : "white",
+            "border-top" : "1px solid black"
+        }
+
+    }
+}

@@ -6,12 +6,17 @@ Here are important things to the basic function of the system. If you want to ch
 change it in src/app
 */
 import { coreComponent } from "./app/components/core/core-component.js";
+import { StyleHandler } from "./sys/styleHandler.js";
 
 var appTag = document.getElementsByTagName("app");
 
 var core = new coreComponent();
 await loadTemplate(core.template);
-core.ready();
+await core.ready();
+
+let customCssElm = document.getElementById("CustomCss");
+var styleHandler = new StyleHandler(core, customCssElm);
+styleHandler.updateStyles();
 
 function loadTemplate( template ) {
     let url = "./app/" + template;
