@@ -15,7 +15,7 @@ left-menu {
 
 #Header {
     width: 100%;
-    height: 120px;
+    height: 100px;
     background-color: orange;
     color: white;
     display: flex;
@@ -43,17 +43,10 @@ left-menu {
     
 }
 
-#Header .path {
-    font-size: medium;
-    bottom: 3px;
-    text-decoration: underline;
-    font-family: 'Courier New', Courier, monospace;
-}
-
 #List {
     position: absolute;
     width: 100%;
-    height: calc(100% - 120px);
+    height: calc(100% - 100px);
     overflow-y: scroll;
     bottom: 0px;
     background-color: whitesmoke;
@@ -88,10 +81,52 @@ left-menu {
     color: gray;
 }
 
+
+#List p {
+    margin: 0;
+    height: 30px;
+    margin-top: 2px;
+    border-top: 1px solid black;
+    margin-bottom: 1px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 content {
     position: absolute;
-    height: 100%;
-    width: calc(100% - 370px);
+    height: calc(100vh - 20px);
+    width: calc(100% - 370px - 200px);
     right: 0;
     padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+content .codeLine {
+    background-color: whitesmoke;
+    color: black;
+    padding: 1px 5px 1px 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-family: monospace;
+}
+
+content div.code-block {
+    background-color: rgb(0, 1, 39);
+    color: white;
+    padding: 1px 5px 1px 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-family: monospace;
+    line-height: 18px;
+}
+
+tb {
+    margin-left: 30px;
+    border-left: 1px solid rgba(255, 255, 255, 0.185);
 }

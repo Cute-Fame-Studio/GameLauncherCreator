@@ -6,8 +6,8 @@ async function updateRoute()
 
     // Go to main page when nothing especified in URL
     if (hash == "") {
-        location.href = "#introduction";
-        hash = "introduction";
+        location.href = "#intro";
+        hash = "intro";
     };
 
     let url = "docs files/pages/" + hash + ".html";

@@ -1,0 +1,60 @@
+<h1>Styles - syntax</h1>
+
+<p>
+    In GLC styles file, the information is organized as a JSON data. 
+</p>
+
+<p>
+    Syntax base:
+    <div class="code-block">
+        { <br/>
+        <tb>... <br/>
+        <tb><span style="color: red;">"target"</span> { <br/>
+        <tb><tb><span style="color: yellow;">"proriety-1"</span> : "stringValue", <br/>
+        <tb><tb><span style="color: yellow;">"proriety-2"</span> : 10, <br/>
+        <tb><tb>... <br/>
+        <tb><tb><span style="color: red;">"target-child"</span> { <br/>
+        <tb><tb>... <br/>
+        <tb><tb>} <br/>
+        <tb>} <br/>
+        }
+    </div>
+</p>
+
+<br/>
+<h3>Special characters:</h3>
+<p>
+    In the style process, is important to know the type of element you're targeting.
+    In CSS scripts, the programmer can use keywords like <span class="codeLine">div</span>
+    to referenciate a DIV html tag, a <span class="codeLine">#</span> ti referenciate a 
+    element ID or a <span class="codeLine">.</span> to referenciate a class. <br/>
+    This concept also is used by GLC's style language, but with a little modifications: <br/>
+
+    <ul>
+        <li>
+            The <span class="codeLine">@</span> Character have to be used before the identifier
+            to reference a HTML tag. <br/>
+            Ex.: <span class="codeLine">"@div"</span> will reference all DIV tags in the document.
+        </li>
+        <br/>
+        <li>
+            The <span class="codeLine">#</span> Character have to be used before the identifier
+            to reference a ID of a tag. <br/>
+            Ex.: <span class="codeLine">"#MyUniqueId"</span> will reference the element with id
+            "MyUniqueId".
+        </li>
+        <br/>
+        <li>
+            The <span class="codeLine">.</span> Character have to be used before the identifier
+            to reference a CLASS of a tag. <br/>
+            Ex.: <span class="codeLine">".SomeClass"</span> will reference all the elements with
+            "SomeClass" as one of it classes.
+        </li>
+        <br/>
+        <li>
+            Any parameter witout a identifier character will be headed as an parameter. <br/>
+            Ex.: <span class="codeLine">"background-color" : "black"</span> will apply the color
+            black to the element that it's encapsulated.
+        </li>
+    </ul>
+</p>
