@@ -3,6 +3,11 @@ body {
     margin: 0;
 }
 
+app {
+    --bottom-bar-height: 75px;
+    --left-bar-width: 75px;
+}
+
 screen {
     display: inline-block;
     position: absolute;
@@ -48,7 +53,7 @@ main-screen {
 
 main-screen #Left-bar {
     position: absolute;
-    width: 75px;
+    width: var(--left-bar-width);
     height: calc(100% - 75px - 75px);
     background: white;
     border-right: 1px solid black;
@@ -57,7 +62,7 @@ main-screen #Left-bar {
 
 main-screen #Bottom-bar {
     position: absolute;
-    height: 75px;
+    height: var(--bottom-bar-height);
     width: 100%;
     border-top: 1px solid black;
     background: white;
@@ -68,4 +73,27 @@ main-screen #icon {
     width: 60px;
     height: 60px;
     margin: calc(15px/2);
+}
+
+div#InfoFrame {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: calc(100vh - var(--bottom-bar-height) - 1px);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+info {
+    position: absolute;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: white;
+    min-height: 70%;
+    max-height: max-content;
+    max-width: 70%;
+    border: 1px solid black;
+    padding: 15px;
 }
