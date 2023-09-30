@@ -27,16 +27,14 @@ background .layer {
     position: absolute;
     top: 0;
     z-index: -2;
+    image-rendering: pixelated;
 }
 
-background .shader {
+background shader {
     position: absolute;
     top: 0;
     height: 100%;
     width: 100%;
-    background: linear-gradient(117deg, rgba(252, 255, 113, 0.14) 0%, #000 100%);
-    mix-blend-mode: hard-light;
-    backdrop-filter: blur(1px);
     z-index: -1;
 }
 
@@ -52,19 +50,17 @@ main-screen #Left-bar {
     position: absolute;
     width: 75px;
     height: calc(100% - 75px - 75px);
-    background: #283922;
-    border-right: 3px solid #071D00;
-    border-top: 3px solid #071D00;
-    border-radius: 0 20px 20px 0;
-    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
+    background: white;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
 }
 
 main-screen #Bottom-bar {
     position: absolute;
     height: 75px;
     width: 100%;
-    border-top: 3px solid #071D00;
-    background: #283922;
+    border-top: 1px solid black;
+    background: white;
     bottom: 0;
 }
 

@@ -1,0 +1,132 @@
+body,
+html {
+    margin: 0px;
+}
+
+left-menu {
+    margin: 0;
+    width: 350px;
+    height: 100vh;
+    box-shadow: 2px 0px 10px 0px rgb(0, 0, 0, 0.25);
+    display: inline-block;
+    margin-bottom: -4px;
+    position: absolute;
+}
+
+#Header {
+    width: 100%;
+    height: 100px;
+    background-color: orange;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+}
+
+#Header .title,
+#Header .title2,
+#Header .path {
+    margin: 0;
+    position: absolute;
+}
+
+#Header .title {
+    font-size: 50px;
+    top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#Header .title2 {
+    font-size: 35px;
+    top: 50px;
+    
+}
+
+#List {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 100px);
+    overflow-y: scroll;
+    bottom: 0px;
+    background-color: whitesmoke;
+}
+
+#List a {
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    margin-bottom: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    text-decoration: dotted;
+}
+
+#List a:active {
+    background-color: whitesmoke;
+}
+
+#List a:hover {
+    background-color: whitesmoke;
+}
+
+#List a {
+    color: black;
+}
+
+#List a:visited {
+    color: gray;
+}
+
+
+#List p {
+    margin: 0;
+    height: 30px;
+    margin-top: 2px;
+    border-top: 1px solid black;
+    margin-bottom: 1px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+content {
+    position: absolute;
+    height: calc(100vh - 20px);
+    width: calc(100% - 370px - 200px);
+    right: 0;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+content .codeLine {
+    background-color: whitesmoke;
+    color: black;
+    padding: 1px 5px 1px 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-family: monospace;
+}
+
+content div.code-block {
+    background-color: rgb(0, 1, 39);
+    color: white;
+    padding: 1px 5px 1px 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-family: monospace;
+    line-height: 18px;
+}
+
+tb {
+    margin-left: 30px;
+    border-left: 1px solid rgba(255, 255, 255, 0.185);
+}

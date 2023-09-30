@@ -1,18 +1,27 @@
 {
-    "@background" : {},
+    "@background" :
+    {
+        "@shader":
+        {
+            "background" : "linear-gradient(117deg, rgba(252, 255, 113, 0.14) 0%, #000 100%)",
+            "mix-blend-mode" : "hard-light",
+            "backdrop-filter" : "blur(5px)"
+        }
+    },
     "@main-screen" :
     {
         "#Left-bar" :
         {
-            "background" : "white",
-            "border" : "none",
-            "border-radius" : "0 20px 0 0"
+            "background" : "#283922",
+            "border-right" : "3px solid #071D00",
+            "border-top" : "3px solid #071D00",
+            "border-radius" : "0 20px 20px 0"
         },
 
         "#Bottom-bar" :
         {
-            "background" : "white",
-            "border-top" : "1px solid black"
+            "background" : "#283922",
+            "border-top" : "3px solid #071D00"
         }
 
     }
