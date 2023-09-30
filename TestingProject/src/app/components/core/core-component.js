@@ -1,5 +1,6 @@
 import { Component } from "../../../util/component.js";
 import { BackgroundComponent } from "../background/bg-component.js";
+import { InfoComponent } from "../info/info-component.js";
 import { MainScreenComponent } from "../main/main-component.js";
 
 export class coreComponent extends Component {
@@ -41,10 +42,11 @@ export class coreComponent extends Component {
         this.childs.push(mainScreenComponent);
         mainScreenComponent.ready();
 
-/* load information component */ 
+        /* load information component */ 
          let infoScreenTags = document.getElementsByTagName("info"); 
          let infoComponent = new InfoComponent(infoScreenTags[0], this); 
          this.childs.push(infoComponent);
+         infoComponent.ready();
 
     }
 

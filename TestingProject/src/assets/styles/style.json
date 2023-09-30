@@ -3,7 +3,7 @@
     {
         "@shader":
         {
-            "background" : "linear-gradient(117deg, rgba(252, 255, 113, 0.14) 0%, #000 100%)",
+            "background" : "linear-gradient(225deg, rgba(252, 255, 113, 0.14) 0%, #000 80%)",
             "mix-blend-mode" : "hard-light",
             "backdrop-filter" : "blur(5px)"
         }
@@ -15,14 +15,26 @@
             "background" : "#283922",
             "border-right" : "3px solid #071D00",
             "border-top" : "3px solid #071D00",
-            "border-radius" : "0 20px 20px 0"
+            "border-radius" : "0 20px 20px 0",
+            "box-shadow" : "10px 0px 10px black"
         },
 
         "#Bottom-bar" :
         {
             "background" : "#283922",
-            "border-top" : "3px solid #071D00"
+            "border-top" : "3px solid #071D00",
+            "box-shadow" : "0px -10px 10px black"
         }
 
+    },
+    "@info" :
+    {
+        "background" : "#283922",
+        "border" : "3px solid #071D00",
+        "color" : "white",
+        "padding" : "30px",
+        "text-align" : "justify",
+        "border-radius" :  "20px",
+        "z-index" : -1
     }
 }
