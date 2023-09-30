@@ -31,7 +31,7 @@ export class BackgroundComponent extends Component {
         /* Create two img elements to the transition effect */
         let imgA = document.createElement("div");
         let imgB = document.createElement("div");
-        let shader = document.createElement("div");
+        let shader = document.createElement("shader");
         /*configure the img elements */
         imgA.style.backgroundImage = "url(" + this.backgrounds[0] + ")";
         imgA.style.backgroundImage = "url(" + this.backgrounds[1] + ")";
@@ -39,7 +39,6 @@ export class BackgroundComponent extends Component {
         imgB.classList.add("layer");
         imgA.style.opacity = 1;
         imgB.style.opacity = 0;
-        shader.classList.add("shader");
 
         /*add the img elements to the DOM and store they in a array too */
         this.element.appendChild(imgA);
