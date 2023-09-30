@@ -40,6 +40,13 @@ export class coreComponent extends Component {
         let mainScreenComponent = new MainScreenComponent(mainScreenTags[0], this);
         this.childs.push(mainScreenComponent);
         mainScreenComponent.ready();
+
+/* load information component */ 
+         let infoScreenTags = document.getElementsByTagName("info"); 
+         let infoComponent = new InfoComponent(infoScreenTags[0], this); 
+         this.childs.push(infoComponent);
+
     }
 
 }
+
